@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Happiness</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customers Choice</title>
+        <link rel="stylesheet" href="css/survey-form.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,300&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header__container">
+                <div class="header__nav">
+                    <p>Customer's Choice</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <main>
+
+                <div id="intro__section">
+                    <h1 id="title">Customers Choice</h1>
+                    <p id="description">We would like to ask your feedback and suggestion to help us serve you better
+                    </p>
+                </div>
+
+                <form id="survey-form" method="post" name="google-sheet">
+
+                    <div class="form__group">
+                        <label id="name-label" class="form__label" for="name">Name</label>
+                        <input id="name" class="form__control" type="text" name="name" placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form__group">
+                        <label id="email-label" class="form__label" for="email">Email</label>
+                        <input id="email" class="form__control" type="email" name="email"
+                            placeholder="Enter your Email">
+                    </div>
+
+
+                    <div class="form__group">
+
+                        <p> Please select your gender:</p>
+                        <label>
+                            <input class="input-checkbox" name="gender" value="Male" type="radio">Male
+
+                        </label>
+                        <label>
+                            <input class="input-checkbox" name="gender" value="Female" type="radio">Female
+
+                        </label>
+
+                    </div>
+
+                    <div class="form__group">
+                        <p>Employee/ Dependent</p>
+                        <label>
+                            <input class="input-checkbox" name="empdata" value="Employee" type="radio">Employee
+
+                        </label>
+                        <label>
+                            <input class="input-checkbox" name="empdata" value="Dependent" type="radio">Dependent
+
+                        </label>
+                    </div>
+
+                    <div class="form__group">
+                        <p>Please select your age:</p>
+
+                        <select class="input-checkbox" name="age">
+                            <optgroup label="Please select your">
+                                <option value="sdance">18 - 30</option>
+                                <option value="code">31 - 40</option>
+                                <option value="sbr">41 - 50</option>
+                                <option value="chess">51 - 60 </option>
+                                <option value="carrom">61 - 70</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form__group">
+                        <div>
+
+                            <p class="p__desc"> What is your favourite Outdoor sports? <span class="clue">(Check all
+                                    that
+                                    apply)</span></p>
+                            <div class="osports">
+                                <div>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_1" value="Soccer"
+                                            type="checkbox">Soccer
+
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_2" value="Golf" type="checkbox">Golf
+
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_3" value="Swimming"
+                                            type="checkbox">Swimming
+
+                                    </label>
+                                </div>
+                                <div>
+
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_4" value="Horse_Riding"
+                                            type="checkbox">Horse
+                                        Riding
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_5" value="Tennis"
+                                            type="checkbox">Tennis
+
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_6" value="Padel"
+                                            type="checkbox">Padel
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_7" value="Hiking"
+                                            type="checkbox">Hiking
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_8" value="Volley"
+                                            type="checkbox">Volley
+                                        Ball
+
+                                    </label>
+                                    <label>
+                                        <input class="input-checkbox" name="outdoor_9" value="Basket"
+                                            type="checkbox">Basket
+                                        Ball
+
+                                    </label>
+                                </div>
+
+                            </div>
+                            <!-- <label id="name-label" class="form__label" for="outdoor_other">Others</label> -->
+                            <input id="outdoor_other" class="form__control" type="text" name="outdoor_other"
+                                placeholder="Please specify if you like other outdoor sports">
+
+
+
+
+                            <div class="form__group">
+                                <div>
+                                    <p class="p__desc"> What is your favourite Indoor sports? <span class="clue">(Check
+                                            all that
+                                            apply)</span></p>
+
+                                    <div class="isports">
+                                        <div>
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_1" value="Fitness_Lessons"
+                                                    type="checkbox">Fitness Lessons
+
+                                            </label>
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_2" value="Table_Tennis"
+                                                    type="checkbox">Table
+                                                Tennis
+
+                                            </label>
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_3" value="Squash"
+                                                    type="checkbox">Squash
+
+                                            </label>
+                                        </div>
+                                        <div>
+
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_4" value="Basket_Ball"
+                                                    type="checkbox">Basket
+                                                Ball
+                                            </label>
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_5" value="Badminton"
+                                                    type="checkbox">Badminton
+
+                                            </label>
+                                            <label>
+                                                <input class="input-checkbox" name="indoor_6" value="Billiards"
+                                                    type="checkbox">Billiards
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input id="indoor_other" class="form__control" type="text" name="indoor_other"
+                                    placeholder="Please specify if you like other indoor sports">
+                            </div>
+
+
+                            <!-- <div class="form__group">
+                            <p class="p__desc"> What is your favourite Food? <span class="clue">(Check all that
+                                    apply)</span></p>
+                            <label>
+                                <input class="input-checkbox" name="food_1" value="Arabic" type="checkbox">Arabic
+
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="food_2" value="Indian" type="checkbox">Indian
+
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="food_3" value="Asian" type="checkbox">Asian
+
+                            </label>
+
+                            <label>
+                                <input class="input-checkbox" name="food_4" value="Fast_Food" type="checkbox">Fast
+                                Food
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="food_5" value="Western" type="checkbox">Western
+
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="food_6" value="Italian" type="checkbox">Italian
+
+                            </label>
+                            <label id="name-label" class="form__label" for="food_other">Others</label>
+                            <input id="food_other" class="form__control" type="text" name="food_other"
+                                placeholder="What is your favourite food?">
+
+                        </div>
+
+                         <div class="form__group">
+                            <p class="p__desc"> What is your favourite Pet? <span class="clue">(Check all that
+                                    apply)</span></p>
+                            <label>
+                                <input class="input-checkbox" name="pet_1" value="Cats" type="checkbox">Cats
+
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="pet_2" value="Dogs" type="checkbox">Dogs
+
+                            </label>
+                            <label id="name-label" class="form__label" for="pet_other">Others</label>
+                            <input id="pet_other" class="form__control" type="text" name="pet_other"
+                                placeholder="Which pet you like?">
+
+                        </div> -->
+
+                            <div class="form__group">
+                                <p class="p__desc"> What is your favourite Event? <span class="clue">(Check all that
+                                        apply)</span></p>
+                                <label>
+                                    <input class="input-checkbox" name="event_1" value="Kids" type="checkbox">Kids
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_2" value="Sports" type="checkbox">Sports
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_3" value="Music" type="checkbox">Music
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_4" value="Arts-and-Crafts"
+                                        type="checkbox">Arts &
+                                    Crafts
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_5" value="Learning"
+                                        type="checkbox">Learning
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_6" value="Dining" type="checkbox">Dining
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_7" value="Social" type="checkbox">Social
+
+                                </label>
+                                <label>
+                                    <input class="input-checkbox" name="event_8" value="Out_of_Camp_Activities"
+                                        type="checkbox">Out of
+                                    Camp Activities
+
+                                </label>
+
+                                <label>
+                                    <input class="input-checkbox" name="event_9" value="Safety_Trainings"
+                                        type="checkbox">Safety
+                                    Trainings
+
+                                </label>
+
+                                <label id="event_other" class="form__label" for="event_other">Others</label>
+                                <input id="event_other" class="form__control" type="text" name="event_other"
+                                    placeholder="What is your favourite event?">
+
+                            </div>
+
+                            <!-- <div class="form__group">
+                            <p class="p__desc"> What is your favourite Udhailihyah Facilities? <span class="clue">(Check
+                                    all
+                                    that
+                                    apply)</span></p>
+                            <label>
+                                <input class="input-checkbox" name="facility_1" value="Golf_Club" type="checkbox">Golf
+                                Club
+
+                            </label>
+                            <label>
+                                <input class="input-checkbox" name="facility_2" value="House_of_Jasimine"
+                                    type="checkbox">House of Jasimine
+
+                            </label>
+                            <label id="facility_other" class="form__label" for="facility_other">Others</label>
+                            <input id="facility_other" class="form__control" type="text" name="facility_other"
+                                placeholder="Which is your favourite hangout place in Udhailiyah?">
+
+                        </div>
+                    -->
+
+                            <div class="form__group">
+                                <p class="p__desc">Do you have any suggestions or ideas that would help UCSD
+                                    increase
+                                    customer
+                                    happiness</p>
+                                <textarea id="comments" class="input-textarea" name="comment_1"
+                                    placeholder="Enter your comment here..."></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <button type="submit" id="submit" class="submit-button">Submit</button>
+                            </div>
+                </form>
+
+                <div id="advice">
+                    <p>Our aim is to provide better customer services </p>
+                </div>
+
+                <footer>
+                    <div class="footer__container">
+                        <div class="footer__content">
+                            <p>Click on the icon to get important Udhailiyah Locations</p>
+                        </div>
+                        <div class="github__icon">
+                            <a href="https://zeeshanfaraz1.github.io/location_map/buttons-style.html"
+                                alt="Udhailiyah_Locations">
+                                <img class="github__link" src="map.png" /></a>
+                        </div>
+                    </div>
+                </footer>
+
+            </main>
+        </div>
+    </body>
+
+    </html>
+    <!-- partial -->
+    <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtIvwW2rN2APbVgrpwLNmddrpb4AIAPdVt3hJ9dr6ZX8ZUoLPsISINC5yWexd-JpE0/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
